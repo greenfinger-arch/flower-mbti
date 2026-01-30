@@ -1,0 +1,66 @@
+/* src/pages/Main.css */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.main-title {
+  font-size: 2rem;
+  color: #2d5a27;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 40px;
+}
+
+.main-image-wrapper {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.main-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; /* 이미지 비율 유지 */
+  border-radius: 24px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+}
+
+.main-info {
+  margin-bottom: 50px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.start-button {
+  width: 100%;
+  padding: 20px;
+  background-color: #2d5a27;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.start-button:hover {
+  background-color: #1e3d1a;
+}
+
+.app-logo {
+  width: 120px;   /* 원하는 크기로 조절하세요 */
+  height: auto;
+  border-radius: 20%; /* 로고가 사각형이면 둥글게 만들어줍니다 */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 살짝 그림자 효과 */
+}

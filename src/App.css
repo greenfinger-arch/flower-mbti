@@ -1,0 +1,30 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+// 우리가 만들 페이지 컴포넌트들을 불러옵니다.
+import Main from './pages/Main';
+import Question from './pages/Question';
+import Result from './pages/Result';
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        {/* 모든 페이지에서 공통으로 보일 레이아웃이 있다면 여기에 작성 (예: 네비게이션 바) */}
+        
+        <Routes>
+          {/* 1. 메인 홈 페이지 (localhost:3000/) */}
+          <Route path="/" element={<Main />} />
+          
+          {/* 2. 질문 페이지 (localhost:3000/question) */}
+          <Route path="/question" element={<Question />} />
+          
+          {/* 3. 결과 페이지 (localhost:3000/result) */}
+          <Route path="/result" element={<Result />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
